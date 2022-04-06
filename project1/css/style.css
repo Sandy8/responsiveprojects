@@ -1,0 +1,121 @@
+body {
+    margin: 0;
+    background-color: #fefcf9;
+    color: #18140f;
+    font-family: fangsong, Helvetica, sans-serif;
+    letter-spacing: 1px;
+}
+
+.intro {
+    width: 100%;
+    height: 640px;
+    overflow: hidden;
+}
+
+.description {
+    width: 30%;
+    height: 100%;
+    float: left;
+    text-align: left;
+}
+
+.width h1 {
+    padding-top: 260px;
+}
+.width{
+	width:70%;
+	margin:0 auto;
+}
+.sheet {
+    height: 100%;
+    width: 30%;
+    float: left;
+    background-color: #f6dab8;
+}
+
+.sheet img {
+    width: 120%;
+    height: auto;
+    padding-top: 150px;
+    float: left;
+}
+
+.rest {
+    text-align: right;
+    overflow: hidden;
+    padding-right: 100px;
+    padding-top: 150px;
+}
+
+.rest ul {
+    list-style-type: none;
+}
+
+ul li {
+    line-height: 22px;
+}
+
+.rest table {
+    text-indent: 30px;
+    width: 80%;
+}
+
+.bold {
+    font-weight: bold;
+}
+
+.overlap {
+    font-size: 36px;
+    margin-top: 50px;
+    margin-left: 200px;
+    position: absolute;
+    left: 45px;
+    top: 25px;
+    z-index: 2;
+}
+
+.instructions {
+    position: relative;
+    width: 80%;
+    margin: 50px auto;
+}
+
+.image-container {
+    background-color: #f6dab8;
+    width: 80%;
+    height: 100%;
+    overflow: auto;
+    margin: 0 auto;
+    padding: 50px;
+}
+
+li>img {
+    width: 25vh;
+    height: auto;
+}
+
+ol li {
+    float: left;
+    width: 25%;
+}
+@media(max-width:700px){
+	ol li{
+		width:50%;
+		float:left;
+	}
+	li>img {
+    width: 50%;
+    height: auto;
+	}
+	.overlap {
+		font-size: 36px;
+		margin-left: 50px;
+		margin-top:15px;
+	}
+	.width h1 {
+		padding-top: 80px;
+	}
+	.rest{
+		padding-top:80px;
+	}
+}

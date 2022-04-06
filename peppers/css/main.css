@@ -1,0 +1,383 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    font-family: Candara, Sans-serif;
+    background-color: #42373A;
+}
+
+.coloryellow {
+    color: #ffee9e;
+}
+/* navigation */
+header {
+    margin: 0;
+    padding: 0;
+    height: 100px;
+    width: 100%;
+    text-align: center;
+    background-color: #ffee9e;
+}
+
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+li a:hover {
+    border-bottom: 1px solid #000;
+}
+
+nav > ul {
+    padding: 0;
+    width: 85%;
+    margin: 0 auto;
+    height: 30px;
+}
+
+    nav > ul > li {
+        float: left;
+        margin: 0 5%;
+        list-style-type: none;
+    }
+
+        nav > ul > li:hover {
+            transform: scale(1.2);
+            /*border-bottom: 1px solid #000;*/
+            /*    border-bottom: 1px solid #000;
+            background: red;
+            padding: 10px;*/
+        }
+
+/* index page */
+#homehero {
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/shawn-ang-nmpW_WwwVSc-unsplash.jpg);
+    background-size: 100%;
+    background-position: center;
+    margin: 25px 0;
+}
+
+main > h2 {
+    text-align: center;
+}
+
+.servings {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+    margin: 10px auto;
+    clear: both;
+    height: 270px;
+}
+
+.onefourth {
+    width: 23%;
+    padding: 1%;
+    overflow: hidden;
+    float: left;
+    height: 270px;
+}
+
+img.itemServing {
+    margin-top: 5px;
+    margin-bottom: 5px;
+    height: 230px;
+    width: 100%;
+}
+
+    img.itemServing:hover {
+        transform: scale(1.2);
+    }
+
+.onefourth > p {
+    text-align: center;
+}
+
+
+/* footer */
+footer {
+    width: 100%;
+    height: 130px;
+    background-color: #ffee9e;
+    position: relative;
+    top: 50px;
+    bottom: 0px;
+}
+
+.share a {
+    border-bottom: none;
+}
+
+a img {
+    height: 25px;
+    width: auto;
+    padding: 0 1%;
+}
+
+    a img:hover {
+        /*  height: 28px;
+        width: auto;*/
+        transform: scale(1.2);
+    }
+
+.half {
+    width: 45%;
+    float: left;
+    padding: 10px 1%;
+}
+
+    .half p {
+        margin: 5px 0;
+        padding: 0;
+    }
+
+.address {
+    text-align: right;
+}
+
+.share {
+    text-align: left;
+}
+
+
+/* about us page */
+.aboutus {
+    height: 450px;
+    margin: 30px 0;
+}
+
+    .aboutus > img {
+        width: 55%;
+        height: auto;
+        margin: 0 0 0 10%;
+        float: left;
+    }
+
+    .aboutus > p {
+        width: 40%;
+        position: absolute;
+        right: 100px;
+        top: 180px;
+        background-color: #ffee9e;
+        padding: 30px;
+    }
+
+
+/* menu page */
+.menudetails {
+    width: 70%;
+    margin: 0 auto;
+    height: 150px;
+}
+
+.tablescontainer {
+    width: 70%;
+    margin: 0 auto;
+    height: 290px;
+}
+
+.menudetails > h1, .menudetails > p {
+    text-align: center;
+}
+
+.tables {
+    width: 28%;
+    padding: 2%;
+    float: left;
+}
+
+/* event page */
+.eventcontainer {
+    width: 90%;
+    margin: 20px auto;
+    height: 720px;
+    overflow: hidden;
+}
+
+.onehalfevent {
+    width: 48%;
+    padding: 1%;
+    float: left;
+}
+
+    .onehalfevent > img {
+        width: 100%;
+    }
+
+/* from kitchen page */
+.fromkitchen {
+    width: 80%;
+    height: 360px;
+    margin: 40px auto;
+}
+
+    .fromkitchen > h1 {
+        color: #ffee9e;
+        text-align: center;
+    }
+
+.recipe {
+    width: 23%;
+    background-color: #ffee9e;
+    height: 300px;
+    margin: 0 5%;
+    float: left;
+    overflow: hidden;
+}
+
+    .recipe > img {
+        width: 100%;
+    }
+
+    .recipe > p {
+        text-align: center;
+    }
+
+.recipeinstructions {
+    visibility: hidden;
+    position: absolute;
+    top: 150px;
+    height: 400px;
+    width: 60%;
+    background-color: #42373A;
+    border: 5px solid #ffee9e;
+    left: 20%;
+    text-align: center;
+    padding: 15px 0;
+}
+
+.recipe > p:hover + .recipeinstructions {
+    visibility: visible;
+}
+
+.recipeinstructions ul li {
+    list-style-type: none;
+}
+
+.clsCopyRites {
+    padding-top: 6%;
+    font-size: .70em;
+    font-style: italic;
+    text-align: center;
+}
+/* contact us page */
+.contactwrapper {
+    width: 70%;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+    header {
+        height: 250px;
+    }
+
+    nav ul li {
+        display: block;
+        clear: both;
+        margin: 5px 0;
+        width: 100%;
+        text-align: center;
+    }
+
+        nav ul li:hover {
+            border: none;
+        }
+
+    .servings {
+        width: 90%;
+        margin: 10px 10%;
+        clear: both;
+        height: 570px;
+        overflow: hidden;
+        display: block;
+    }
+
+    .onefourth {
+        width: 40%;
+        margin: 0 auto;
+    }
+
+    .aboutus > img {
+        width: 80%;
+        margin: 0 10%;
+    }
+
+    .aboutus > p {
+        width: 80%;
+        background-color: #ffee9e;
+        padding: 30px;
+        margin: 0 auto;
+        position: absolute;
+        top: 670px;
+        right: 5%;
+    }
+
+    .aboutus {
+        height: 540px;
+        overflow: auto;
+    }
+
+    .tablescontainer {
+        width: 70%;
+        margin: 0 auto;
+        height: 750px;
+        overflow: auto;
+    }
+
+    .tables {
+        width: 96%;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    td, th {
+        width: 30%;
+    }
+
+    .onehalfevent {
+        width: 80%;
+        padding: 1%;
+        margin: 0 10%;
+    }
+
+    .eventcontainer {
+        height: 1155px;
+        overflow: auto;
+    }
+
+    .recipe {
+        width: 80%;
+        height: 400px;
+        margin: 10px 10%;
+    }
+
+    .fromkitchen {
+        height: 1385px;
+        overflow: auto;
+    }
+
+    .recipeinstructions {
+        height: auto;
+        width: 80%;
+        left: 10%;
+        padding: 30px 0;
+    }
+
+    .recipe > .milkpeda:hover + .recipeinstructions {
+        top: 500px;
+    }
+
+    .recipe > .biryani:hover + .recipeinstructions {
+        top: 900px;
+    }
+
+    .recipe > .paneerbutter:hover + .recipeinstructions {
+        top: 1300px;
+    }
+
+    .clsCopyRites {
+        padding-top: 21%;
+    }
+}
